@@ -18,9 +18,14 @@ btn.addEventListener("click",(e)=>{
 	td3.innerText=isbn;
 	let td4=document.createElement("td");
 	let del=document.createElement("button");
-	del.value="X";
+	del.innerText = "X";
 	del.style.background="red";
-	td4.append(del)
+	del.style.color="white";
+	del.style.background="red";
+	td4.append(del);
+	del.addEventListener("click", () => {
+        tr.remove();
+      });
 	tr.append(td1,td2,td3,td4);
 	tbody.append(tr)
 	table.append(tbody);
