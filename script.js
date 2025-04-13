@@ -24,7 +24,7 @@ btn.addEventListener("click",(e)=>{
 	del.style.background="red";
 	td4.append(del);
 	del.addEventListener("click", () => {
-        tr.clear();
+        tr.delete();
       });
 	tr.append(td1,td2,td3,td4);
 	tbody.append(tr)
