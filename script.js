@@ -19,6 +19,7 @@ btn.addEventListener("click",(e)=>{
 	let td4=document.createElement("td");
 	let del=document.createElement("button");
 	del.innerText = "X";
+	del.className = "delete";
 	del.style.background="red";
 	del.style.color="white";
 	del.style.background="red";
