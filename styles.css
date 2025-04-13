@@ -17,8 +17,12 @@ button{
 	color:white;
 	border-radius:5px;
 }
-{
+tr{
 	width:100%;
 	border:1px solid gray;
 	padding:auto;
+}
+th{
+	width:6%;
+	border-bottom:1px solid gray;
 }
