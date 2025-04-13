@@ -7,6 +7,7 @@ btn.addEventListener("click",(e)=>{
 	let title=document.querySelector("#title").value;
 	let author=document.querySelector("#author").value;
 	let isbn=document.querySelector("#isbn").value;	
+	let bookList=document.querySelector("#book-list")
 
 	let tr=document.createElement("tr");
 	let td1=document.createElement("td");
@@ -15,8 +16,13 @@ btn.addEventListener("click",(e)=>{
 	td2.innerText=author;
 	let td3=document.createElement("td");
 	td3.innerText=isbn;
-	let td4=document.createElement("td").innerText="X";
+	let td4=document.createElement("td");
+	let del=document.createElement("button");
+	del.value="X";
+	del.style.background="red";
+	td4.append(del)
 	tr.append(td1,td2,td3,td4);
-	table.append(tr);
+	tbody.append(tr)
+	table.append(tbody);
 	
 })
