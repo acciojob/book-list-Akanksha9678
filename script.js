@@ -7,7 +7,7 @@ btn.addEventListener("click",(e)=>{
 	let title=document.querySelector("#title").value;
 	let author=document.querySelector("#author").value;
 	let isbn=document.querySelector("#isbn").value;	
-	let bookList=document.querySelector("#book-list")
+	let tbody=document.querySelector("#book-list")
 
 	let tr=document.createElement("tr");
 	let td1=document.createElement("td");
